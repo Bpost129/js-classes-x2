@@ -1,12 +1,15 @@
 class Car {
-  constructor(make, model) {
+  constructor(make, model, color) {
     this.make = make
     this.model = model
+    this.color = color
   }
 }
 
 const myCar = new Car('Ford', 'Bronco')
+const myDreamCar = new Car('Acura', 'NSX', 'green')
 console.log(myCar)
+console.log(myDreamCar)
 
 const hybridCar = {
   make: 'Toyota',
