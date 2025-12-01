@@ -13,8 +13,10 @@ class Car {
     this.isRunning = false
     console.log('Stopped!')
   }
+  toString() {
+    return `This car is a ${this.color} ${this.make} ${this.model}.`
+  }
 }
-
 
 
 const myCar = new Car('Ford', 'Bronco')
@@ -23,9 +25,12 @@ const myDreamCar = new Car('Acura', 'NSX', 'green')
 console.log(myDreamCar)
 
 myDreamCar.start()
-console.log(myDreamCar)
+// console.log(myDreamCar)
 myDreamCar.stop()
-console.log(myDreamCar)
+// console.log(myDreamCar)
+
+console.log(myDreamCar.toString())
+
 
 const hybridCar = {
   make: 'Toyota',
