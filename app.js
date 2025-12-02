@@ -28,9 +28,12 @@ class ElectricCar extends Car {
   }
 }
 
-
 const myCar = new Car('Ford', 'Bronco')
 const myDreamCar = new Car('Acura', 'NSX', 'green')
+
+const myVolvo = new ElectricCar('Volvo', 'EX30', 'gray', 100)
+
+console.log(myVolvo)
 
 console.log(myDreamCar)
 myDreamCar.start()
