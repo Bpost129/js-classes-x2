@@ -26,21 +26,36 @@ class ElectricCar extends Car {
     super(make, model, color)
     this.batteryCharge = batteryCharge
   }
+  start() {
+    if (this.batteryCharge > 0) {
+      this.isRunning = true
+      console.log('Your electric car is running!')
+    } else {
+      this.isRunning = false
+      console.log('Time to recharge!')
+    }
+  }
 }
 
-const myCar = new Car('Ford', 'Bronco')
-const myDreamCar = new Car('Acura', 'NSX', 'green')
+// const myCar = new Car('Ford', 'Bronco')
+// const myDreamCar = new Car('Acura', 'NSX', 'green')
 
 const myVolvo = new ElectricCar('Volvo', 'EX30', 'gray', 100)
 
+myVolvo.start()
+console.log(myVolvo)
+myVolvo.batteryCharge = 0
+
+myVolvo.start()
 console.log(myVolvo)
 
-console.log(myDreamCar)
-myDreamCar.start()
-myDreamCar.stop()
 
-console.log(myDreamCar.toString())
-Car.about()
+// console.log(myDreamCar)
+// myDreamCar.start()
+// myDreamCar.stop()
+
+// console.log(myDreamCar.toString())
+// Car.about()
 
 
 const hybridCar = {
