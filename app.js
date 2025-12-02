@@ -21,16 +21,20 @@ class Car {
   }
 }
 
+class ElectricCar extends Car {
+  constructor(make, model, color, batteryCharge) {
+    super(make, model, color)
+    this.batteryCharge = batteryCharge
+  }
+}
+
 
 const myCar = new Car('Ford', 'Bronco')
 const myDreamCar = new Car('Acura', 'NSX', 'green')
-// console.log(myCar)
-console.log(myDreamCar)
 
+console.log(myDreamCar)
 myDreamCar.start()
-// console.log(myDreamCar)
 myDreamCar.stop()
-// console.log(myDreamCar)
 
 console.log(myDreamCar.toString())
 Car.about()
