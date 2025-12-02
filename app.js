@@ -16,6 +16,9 @@ class Car {
   toString() {
     return `This car is a ${this.color} ${this.make} ${this.model}.`
   }
+  static about() {
+    console.log("I'm the Car class!")
+  }
 }
 
 
@@ -30,6 +33,7 @@ myDreamCar.stop()
 // console.log(myDreamCar)
 
 console.log(myDreamCar.toString())
+Car.about()
 
 
 const hybridCar = {
